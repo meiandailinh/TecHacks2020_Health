@@ -1,0 +1,2 @@
+void hand_wash() {
+}

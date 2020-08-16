@@ -1,14 +1,16 @@
+//not necessary to make a class for this scene
 int opening_scene() {
     scene=0;
-    background(100,200,300);
+    background(231,255,227); //pale green
+    image(lr,0,0,width,height); //display background
+    image(gwm,0,320,width/2.7,height/1.8);
     textFont(font);
-    image(lr,0,0,width/1.01,height/1.01); //display background
     noStroke();
-    fill(140,221,255,80); //blue colour
-    rect(400,400,400,100); //rectangle
-    fill(0,0,0); //font colour
+    fill(10,100,173,300); //blue colour
+    ellipse(600,350,400,200); //ellipse
+    fill(255,255,255); //font colour
     textAlign(CENTER);
-    text("School Safety with COVID-19",400,400);
+    text("Back to School with COVID-19",400,315,400,200);
     if (mousePressed==true) {
       scene=1;
     }
