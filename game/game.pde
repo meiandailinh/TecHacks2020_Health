@@ -14,7 +14,7 @@ PImage girl_2;
 PImage boy;
 PFont font;
 PFont body;
-int scene = 8; //change to 0
+int scene = 10; //change to 0
 int temp;
 int x=0;
 int[] items={0,0};

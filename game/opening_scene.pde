@@ -1,7 +1,6 @@
 //not necessary to make a class for this scene
 int opening_scene() {
     scene=0;
-    background(231,255,227); //pale green
     image(lr,0,0,width,height); //display background
     image(gwm,0,320,width/2.7,height/1.8);
     textFont(font);
