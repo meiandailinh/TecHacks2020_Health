@@ -1,5 +1,5 @@
-# TecHacks2020_Health
-This is the code for Ai-Linh and Mei's TecHacks 2020 Hackathon in the Health Track.
+# Back to School with COVID-19
+This is the code for Ai-Linh and Mei's TecHacks 2020 Hackathon in the Health and Education Track.
 
 # What to Download 
 In order to run this game, you need to download processing (link: https://processing.org/download/) and the sound library through processing by following these steps: 
