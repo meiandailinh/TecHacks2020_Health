@@ -9,9 +9,22 @@ int transition () {
       fill(255,255,255); //font colour
       textAlign(CENTER);
       text("Sarah is now at school! Her classroom is on the right",10,100,200,200);
-      text("Use the left and right arrow keys to move Sarah to her class",10,350,200,200);
+      text("Use the left and right arrow keys to move Sarah to her class. Remember to socially distance!",10,350,200,200);
     if(keyPressed==true && keyCode==RIGHT) {
           x+=15;
+    }
+    if( x >= 50 && time < 75){
+      image(girl_2, 650, 320, width/2.7,height/1.8);
+      time += 1;
+      
+    }
+    
+    if( x > 200 && x < 650 && time < 75){
+      fill(255, 0, 0,300); //red colour
+      rect(500, 200, 300, 50, 10, 10, 10, 10);
+      fill(255,255,255); //font colour
+      textAlign(CENTER);
+      text("Remember, Sarah has to socially distance!",500,200,300,200);
     }
     if(keyPressed==true && keyCode==LEFT) {
       x-=15;

@@ -4,6 +4,14 @@ PImage lr; //living room pic
 PImage gwm;
 PImage thm;
 PImage girl;
+PImage sink;
+PImage sw;
+PImage lh;
+PImage lhd1;
+PImage lhd2;
+PImage rh;
+PImage rhd1;
+PImage rhd2;
 PImage mask;
 PImage hallway;
 PImage sani;
@@ -14,9 +22,11 @@ PImage girl_2;
 PImage boy;
 PFont font;
 PFont body;
-int scene = 10; //change to 0
+int clean_value=0;
+int scene = 0; //change to 0
 int temp;
 int x=0;
+int time=0;
 int[] items={0,0};
 void setup() { //loading all backgrounds, images and sounds
   size(1200,700);
@@ -27,6 +37,14 @@ void setup() { //loading all backgrounds, images and sounds
   gwm = loadImage("girl_without_mask.png");
   mask = loadImage("mask.png");
   girl = loadImage("girl.png");
+  sink = loadImage("sink.png");
+  sw = loadImage("sink_water.png");
+  lh = loadImage("left_hand.png");
+  lhd1 = loadImage("left_hand_dirty1.png");
+  lhd2 = loadImage("left_hand_dirty2.png");
+  rh = loadImage("right_hand.png");
+  rhd1 = loadImage("right_hand_dirty1.png");
+  rhd2 = loadImage("right_hand_dirty2.png");
   hallway = loadImage("hallway.jpg");
   sani=loadImage("sanitizer.png");
   bp=loadImage("backpack.png");
@@ -34,6 +52,8 @@ void setup() { //loading all backgrounds, images and sounds
   desk=loadImage("desk.png");
   girl_2=loadImage("extra_girl2.png");
   boy=loadImage("extra_boy.png");
+  lh_image = lhd1;
+  rh_image = rhd1;
   //This code loads and plays the music! Uncomment once game is done
   //file = new SoundFile(this, "music.mp3");
   //file.play();
