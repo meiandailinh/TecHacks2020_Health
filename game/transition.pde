@@ -14,7 +14,7 @@ int transition () {
           x+=15;
     }
     if( x >= 50 && time < 75){
-      image(girl_2, 650, 320, width/2.7,height/1.8);
+      image(girl_2m, 650, 320, width/2.7,height/1.8);
       time += 1;
       
     }

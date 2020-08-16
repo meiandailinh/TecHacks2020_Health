@@ -19,6 +19,7 @@ PImage bp;
 PImage classroom;
 PImage desk;
 PImage girl_2;
+PImage girl_2m;
 PImage boy;
 PFont font;
 PFont body;
@@ -52,11 +53,12 @@ void setup() { //loading all backgrounds, images and sounds
   desk=loadImage("desk.png");
   girl_2=loadImage("extra_girl2.png");
   boy=loadImage("extra_boy.png");
+  girl_2m=loadImage("extra_girl2_mask.png");
   lh_image = lhd1;
   rh_image = rhd1;
   //This code loads and plays the music! Uncomment once game is done
-  //file = new SoundFile(this, "music.mp3");
-  //file.play();
+  file = new SoundFile(this, "music.mp3");
+  file.play();
 }
 
 void draw() {
