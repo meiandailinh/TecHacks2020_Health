@@ -18,6 +18,7 @@ int transition () {
     }
     if (x>700) {
       scene=7;
+      x=0;
     }
     return scene;
 }
